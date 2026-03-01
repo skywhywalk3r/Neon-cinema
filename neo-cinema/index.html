@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOCINEMA</title>
+    <link rel="stylesheet" href="./sass/neo-cinema.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">NEOCINEMA</div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#movies">Фільми</a></li>
+                    <li><a href="#ticket">Квиток</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>МАЙБУТНЄ КІНО ВЖЕ ТУТ</h1>
+                <p>Відчуй кожну деталь у форматі 16K Neuro-Vision</p>
+                <button class="button-q">Дізнатись афішу</button>
+            </div>
+        </section>
+
+        <section id="movies" class="movies">
+            <div class="container">
+                <h2>Зараз у прокаті</h2>
+                <div class="movies__grid">
+                    <article class="movie-card">
+                        <img src="./images/aomine.webp" alt="Aomine" width="300" height="300">
+                        <h3>skywhywalker PRIME</h3>
+                        <p>2022</p>
+                        <button class="button">Купити квиток</button>
+                    </article>
+                    <article class="movie-card">
+                        <img src="./images/kuroko.webp" alt="Ktomchik" width="300" height="300">
+                        <h3>ctom PRIME</h3>
+                        <p>2021</p>
+                        <button class="button">Купити квиток</button>
+                    </article>
+                    <article class="movie-card">
+                        <img src="./images/midorima.webp" alt="Shooter" width="300" height="300">
+                        <h3>strogo PRIME</h3>
+                        <p>2026</p>
+                        <button class="button">Купити квиток</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="ticket" class="ticket">
+            <div class="ticket-content">
+              <span class="ticket-id">PREMIUM ACCESS #2026-NEO</span>
+              
+              <div class="movie-info">
+                <p class="label">MOVIE</p>
+                <h2 class="title">NEO-CINEMA SPECIAL</h2>
+              </div>
+          
+              <div class="ticket-footer">
+                <div class="info-block">
+                  <p class="label">DATE</p>
+                  <p class="value">24.05.2026</p>
+                </div>
+                <div class="info-block">
+                  <p class="label">SEAT</p>
+                  <p class="value">PREMIUM A1</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="ticket-qr">
+              <div class="qr-container">
+                <svg class="qr-svg" viewBox="0 0 100 100">
+                  <rect x="10" y="10" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                  <rect x="60" y="10" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                  <rect x="10" y="60" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2"></rect>
+                  <path d="M15 15h20v20h-20z M65 15h20v20h-20z M15 65h20v20h-20z M50 50h10v10h-10z M70 70h15v15h-15z" fill="currentColor"></path>
+                </svg>
+                <p class="promo-text">NEO_PROMO</p>
+                <p class="scan-q">SCAN FOR ENTRY</p>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 NEO-CINEMA. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

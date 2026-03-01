@@ -1,0 +1,18 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin media-breakpoint-up($breakpoint) {
+  @if $breakpoint == "tablet" {
+      @media (min-width: 768px) { @content; }
+      @media (min-width: 1024px) { @content; }
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+      @media (max-width: 767px) { @content; }
+      @media (max-width: 1023px) { @content; }
+  }
+

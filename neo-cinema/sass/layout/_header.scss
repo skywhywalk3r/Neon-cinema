@@ -1,0 +1,46 @@
+.header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgba($bg-dark, 0.8);
+	backdrop-filter: blur(5px);
+	padding: 1rem 0;
+	transition: padding 0.3s ease;
+
+	.container {
+		@include flex-center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $neon-cyan;
+	}
+
+	&__nav {
+		ul {
+			display: flex;
+			gap: 1.5rem;
+		}
+
+		a {
+			transition: color 0.3s ease;
+			&:hover {
+				color: $neon-cyan;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(tablet) {
+		padding: 0.5rem 0;
+		.container {
+			flex-direction: column;
+			gap: 10px;
+		}
+		&__nav ul {
+			gap: 1rem;
+		}
+	}
+}
